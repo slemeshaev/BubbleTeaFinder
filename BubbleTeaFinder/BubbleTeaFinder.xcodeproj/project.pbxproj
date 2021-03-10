@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		6658E45F25F95BA400F9A729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E45E25F95BA400F9A729 /* AppDelegate.swift */; };
 		6658E46125F95BA400F9A729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E46025F95BA400F9A729 /* SceneDelegate.swift */; };
-		6658E46325F95BA400F9A729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E46225F95BA400F9A729 /* ViewController.swift */; };
 		6658E46625F95BA400F9A729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658E46425F95BA400F9A729 /* Main.storyboard */; };
 		6658E46925F95BA400F9A729 /* BubbleTeaFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6658E46725F95BA400F9A729 /* BubbleTeaFinder.xcdatamodeld */; };
 		6658E46B25F95BA700F9A729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6658E46A25F95BA700F9A729 /* Assets.xcassets */; };
 		6658E46E25F95BA700F9A729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658E46C25F95BA700F9A729 /* LaunchScreen.storyboard */; };
+		6658E48225F9608900F9A729 /* BubbleTeaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E48125F9608900F9A729 /* BubbleTeaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6658E45B25F95BA400F9A729 /* BubbleTeaFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleTeaFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658E45E25F95BA400F9A729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6658E46025F95BA400F9A729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6658E46225F95BA400F9A729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6658E46525F95BA400F9A729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6658E46825F95BA400F9A729 /* BubbleTeaFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BubbleTeaFinder.xcdatamodel; sourceTree = "<group>"; };
 		6658E46A25F95BA700F9A729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6658E46D25F95BA700F9A729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6658E46F25F95BA700F9A729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6658E48125F9608900F9A729 /* BubbleTeaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTeaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,56 @@
 		6658E45D25F95BA400F9A729 /* BubbleTeaFinder */ = {
 			isa = PBXGroup;
 			children = (
-				6658E45E25F95BA400F9A729 /* AppDelegate.swift */,
-				6658E46025F95BA400F9A729 /* SceneDelegate.swift */,
-				6658E46225F95BA400F9A729 /* ViewController.swift */,
-				6658E46425F95BA400F9A729 /* Main.storyboard */,
-				6658E46A25F95BA700F9A729 /* Assets.xcassets */,
-				6658E46C25F95BA700F9A729 /* LaunchScreen.storyboard */,
-				6658E46F25F95BA700F9A729 /* Info.plist */,
-				6658E46725F95BA400F9A729 /* BubbleTeaFinder.xcdatamodeld */,
+				6658E47925F95ECD00F9A729 /* Model */,
+				6658E47A25F95ED900F9A729 /* View */,
+				6658E47B25F95EDE00F9A729 /* Controller */,
+				6658E47C25F95EEE00F9A729 /* Service */,
+				6658E47D25F95EFE00F9A729 /* Helpers */,
 			);
 			path = BubbleTeaFinder;
+			sourceTree = "<group>";
+		};
+		6658E47925F95ECD00F9A729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6658E46725F95BA400F9A729 /* BubbleTeaFinder.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6658E47A25F95ED900F9A729 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6658E46425F95BA400F9A729 /* Main.storyboard */,
+				6658E46C25F95BA700F9A729 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6658E47B25F95EDE00F9A729 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6658E48125F9608900F9A729 /* BubbleTeaController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6658E47C25F95EEE00F9A729 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6658E47D25F95EFE00F9A729 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6658E45E25F95BA400F9A729 /* AppDelegate.swift */,
+				6658E46025F95BA400F9A729 /* SceneDelegate.swift */,
+				6658E46A25F95BA700F9A729 /* Assets.xcassets */,
+				6658E46F25F95BA700F9A729 /* Info.plist */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6658E46325F95BA400F9A729 /* ViewController.swift in Sources */,
 				6658E45F25F95BA400F9A729 /* AppDelegate.swift in Sources */,
 				6658E46925F95BA400F9A729 /* BubbleTeaFinder.xcdatamodeld in Sources */,
+				6658E48225F9608900F9A729 /* BubbleTeaController.swift in Sources */,
 				6658E46125F95BA400F9A729 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
-				INFOPLIST_FILE = BubbleTeaFinder/Info.plist;
+				INFOPLIST_FILE = BubbleTeaFinder/Helpers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
-				INFOPLIST_FILE = BubbleTeaFinder/Info.plist;
+				INFOPLIST_FILE = BubbleTeaFinder/Helpers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
